@@ -7,6 +7,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html[data-bs-theme="dark"] body {
     background-color: #1a1a1a;
     color: #f0f0f0;
 }
@@ -77,24 +80,61 @@ body {
 
 /* Carousel Section */
 .carousel-section {
-    background-color: #1a1a1a;
     margin: 2rem 0;
+}
+
+
+/* Force carousel to stay dark in both light and dark mode */
+.custom-carousel {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
+    border: 1px solid #333 !important;
+}
+
+.carousel-description {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Keep carousel buttons dark */
+.custom-control {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid #333 !important;
+}
+
+.custom-control:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Indicators stay visible */
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.carousel-indicators button.active {
+    background-color: white !important;
 }
 
 .section-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
     text-align: center;
 }
 
+html[data-bs-theme="dark"] .section-title {
+    color: #ffffff;
+}
+
 .custom-carousel {
-    background: linear-gradient(135deg, #232526 0%, #414345 100%);
     border-radius: 15px;
     padding: 4rem 2rem;
     min-height: 300px;
     position: relative;
     overflow: hidden;
+}
+
+html[data-bs-theme="dark"] .custom-carousel {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
     border: 1px solid #4a4a4a;
 }
 
@@ -106,15 +146,18 @@ body {
 }
 
 .carousel-description {
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem 3rem;
     border-radius: 50px;
     font-size: 1.3rem;
     font-weight: 500;
-    color: #f0f0f0;
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
+}
+
+html[data-bs-theme="dark"] .carousel-description {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f0f0f0;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     border: 1px solid #4a4a4a;
 }
@@ -122,76 +165,99 @@ body {
 .custom-control {
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+}
+
+html[data-bs-theme="dark"] .custom-control {
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid #4a4a4a;
 }
 
-.custom-control:hover {
+html[data-bs-theme="dark"] .custom-control:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 
 .carousel-indicators button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     margin: 0 5px;
+}
+
+html[data-bs-theme="dark"] .carousel-indicators button {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.carousel-indicators button.active {
+html[data-bs-theme="dark"] .carousel-indicators button.active {
     background-color: white;
 }
 
-/* About Section */
-.about-section {
+
+
+
+html[data-bs-theme="dark"] .about-section {
     background-color: #1a1a1a;
 }
 
 .about-content {
-    background-color: #24243e;
     padding: 3rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     line-height: 1.8;
     font-size: 1.05rem;
+}
+
+html[data-bs-theme="dark"] .about-content {
+    background-color: #24243e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     color: #f0f0f0;
     border: 1px solid #4a4a4a;
 }
 
-/* Featured Products Section */
-.featured-section {
+
+
+html[data-bs-theme="dark"] .featured-section {
     background-color: #1a1a1a;
 }
 
 .section-subtitle {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #ffffff;
     margin-bottom: 2rem;
 }
 
-.card {
+html[data-bs-theme="dark"] .section-subtitle {
+    color: #ffffff;
+}
+
+
+
+html[data-bs-theme="dark"] .card {
     background-color: #2c2c2c;
     border: 1px solid #4CAF50; /* Green outline */
     color: #f0f0f0;
 }
 
-.card-title {
+
+
+html[data-bs-theme="dark"] .card-title {
      color: #ffffff;
 }
 
 .product-card {
-    background-color: #2c2c2c;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     height: 100%;
+}
+
+html[data-bs-theme="dark"] .product-card {
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #4CAF50; /* Green outline */
 }
 
-.product-card:hover {
+html[data-bs-theme="dark"] .product-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
     border: 1px solid #4CAF50;
@@ -200,6 +266,9 @@ body {
 .product-image-placeholder {
     width: 100%;
     height: 250px;
+}
+
+html[data-bs-theme="dark"] .product-image-placeholder {
     background: linear-gradient(135deg, #414345 0%, #232526 100%);
     border-bottom: 1px solid #4a4a4a;
 }
@@ -212,26 +281,35 @@ body {
 .product-info h5 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #ffffff;
     margin-bottom: 1rem;
+}
+
+html[data-bs-theme="dark"] .product-info h5 {
+    color: #ffffff;
 }
 
 .btn-view {
     padding: 0.6rem 2.5rem;
     background-color: transparent;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
     border-radius: 25px;
     font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.btn-view:hover {
+html[data-bs-theme="dark"] .btn-view {
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+html[data-bs-theme="dark"] .btn-view:hover {
     background-color: #4CAF50;
     color: white;
-    transform: scale(1.05);
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.btn-view:hover {
+    transform: scale(1.05);
 }
 
 .btn-primary {
@@ -325,6 +403,10 @@ body {
     text-align: center;
     margin-top: 3rem;
     padding-top: 2rem;
+}
+
+html[data-bs-theme="dark"] .copyright-text {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #95a5a6;
 }
+
