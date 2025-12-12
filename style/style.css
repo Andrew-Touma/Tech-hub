@@ -409,4 +409,7 @@ html[data-bs-theme="dark"] .copyright-text {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #95a5a6;
 }
+.form-check-label {
+    color: #ffffff;
+}
 

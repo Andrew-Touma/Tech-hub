@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechHub - Reviews</title>
+    <title>TechHub - Mouse & Keyboards</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -37,6 +37,12 @@
                     <li class="nav-item"><a class="nav-link" href="./Mouse&Keyboards.html">Mouse&Keyboards</a></li>
                     <li class="nav-item"><a class="nav-link" href="./index.html#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shoppingCart.html">
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span class="badge bg-danger rounded-pill" id="cart-item-count">0</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="form-check form-switch ms-3">
                   <input class="form-check-input" type="checkbox" id="theme-switch">
@@ -63,6 +69,13 @@
                             <h5 class="card-title">Ergonomic Mouse</h5>
                             <p class="card-text">AOC 2.4GHz Ergonomic Mouse, Wireless Bluetooth Vertical Mouse for Work, 4800 DPI Optical Tracking, 5 Adjustable DPI, Quiet Clicks, RGB Light, Compatible with Computer, Laptop, PC, Mac, Desktop - Gray</p>
                             <p class="card-text"><strong>Price:</strong> $50</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="ergonomic-mouse"
+                                    data-product-name="Ergonomic Mouse"
+                                    data-product-price="50"
+                                    data-product-image="../images/mouse 1.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -73,6 +86,13 @@
                             <h5 class="card-title">Logitech G502</h5>
                             <p class="card-text">Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K Sensor, 25,600 DPI, RGB, Adjustable Weights, 11 Buttons, On-Board Memory, PC/Mac</p>
                             <p class="card-text"><strong>Price:</strong> $33</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="logitech-g502"
+                                    data-product-name="Logitech G502"
+                                    data-product-price="33"
+                                    data-product-image="../images/logitech G502.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -83,6 +103,13 @@
                             <h5 class="card-title">Logitech M196</h5>
                             <p class="card-text">Logitech M196 Bluetooth Wireless Mouse, Compact and Portable Mouse for Laptops, Tablets and More, 12-Month Battery, Smooth Tracking, Compatible with PC and Mac, Windows and macOS - Graphite</p>
                             <p class="card-text"><strong>Price:</strong> $15</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="logitech-m196"
+                                    data-product-name="Logitech M196"
+                                    data-product-price="15"
+                                    data-product-image="../images/M196.jpg">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -99,6 +126,13 @@
                             <h5 class="card-title">AULA F75 Pro</h5>
                             <p class="card-text">AULA F75 Pro Wireless Mechanical Keyboard,75% Hot Swappable Custom Keyboard with Knob,RGB Backlit,Pre-lubed Reaper Switches,Side Printed PBT Keycaps,2.4GHz/USB-C/BT5.0 Mechanical Gaming Keyboards</p>
                             <p class="card-text"><strong>Price:</strong> $69</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="aula-f75-pro"
+                                    data-product-name="AULA F75 Pro"
+                                    data-product-price="69"
+                                    data-product-image="../images/keyboard 1.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -109,6 +143,13 @@
                             <h5 class="card-title">HP 230 Wireless Keyboard </h5>
                             <p class="card-text">HP 230 Wireless Keyboard - Wireless Connection - Low-Profile, Quiet Design - Windows & Mac OS - Laptop, PC Compatible - Shortcut Keys & Number Pad - Long Battery Life (‎3L1E7AA#ABA),Black</p>
                             <p class="card-text"><strong>Price:</strong> $17</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-230-wireless-keyboard"
+                                    data-product-name="HP 230 Wireless Keyboard"
+                                    data-product-price="17"
+                                    data-product-image="../images/keyboard 2.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -119,6 +160,13 @@
                             <h5 class="card-title">LEMOKEY X1</h5>
                             <p class="card-text">LEMOKEY X1 Wired Mechanical Keyboard, QMK Programmable TKL Layout with Pre-Lubed Tactile Switch, North-Facing Red Backlit NKRO Compatible with Windows</p>
                             <p class="card-text"><strong> Special offer Price:</strong> $22</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lemokey-x1-mk"
+                                    data-product-name="LEMOKEY X1"
+                                    data-product-price="22"
+                                    data-product-image="../images/keyboard 3.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -157,5 +205,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/ThemeSwitcher.js"></script>
+    <script src="../js/ShoppingCart.js"></script>
 </body>
+</html>
 </html>

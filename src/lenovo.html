@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechHub - Lenovo Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
@@ -41,6 +41,12 @@
                     <li class="nav-item"><a class="nav-link" href="./Mouse&Keyboards.html">Mouse&Keyboards</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shoppingCart.html">
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span class="badge bg-danger rounded-pill" id="cart-item-count">0</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="form-check form-switch ms-3">
                     <input class="form-check-input" type="checkbox" id="theme-switch">
@@ -75,6 +81,13 @@
 
                                 Solid build with Harman/Dolby audio</p>
                             <p class="card-text"><strong>Price:</strong> $900</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lenovo-legion-y520"
+                                    data-product-name="Lenovo Legion Y520"
+                                    data-product-price="900"
+                                    data-product-image="../images/lenovoLegion.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -93,6 +106,13 @@ Legion ColdFront 5.0 cooling technology for optimal gaming temperatures
 
 Precision keyboard & 16″ 16:10 WQXGA display with variable refresh rates</p>
                             <p class="card-text"><strong>Price:</strong> $1300</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lenovo-legion-pro-5-g8"
+                                    data-product-name="Legion Pro 5 G8"
+                                    data-product-price="1300"
+                                    data-product-image="../images/legionProG8.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -103,6 +123,13 @@ Precision keyboard & 16″ 16:10 WQXGA display with variable refresh rates</p>
                             <h5 class="card-title">Lenovo Legion 5i G10</h5>
                             <p class="card-text">Lenovo Legion 5i Gen 10 Intel Laptop - 15.1" - Intel Core Ultra 7 255HX Processor (E cores up to 4.50 GHz) - NVIDIA RTX 5060 - 512GB SSD - 16GB RAM</p>
                             <p class="card-text"><strong>Price:</strong>$1704.99</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lenovo-legion-5i-g10"
+                                    data-product-name="Lenovo Legion 5i G10"
+                                    data-product-price="1704.99"
+                                    data-product-image="../images/5ig10.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -119,6 +146,13 @@ Precision keyboard & 16″ 16:10 WQXGA display with variable refresh rates</p>
                             <h5 class="card-title">Lenovo LOQ 1</h5>
                             <p class="card-text">Lenovo LOQ Laptop - 15.6" - AMD Ryzen 5 220 (3.20 GHz) - 512GB SSD - 16GB RAM.</p>
                             <p class="card-text"><strong>Price:</strong> $1129.99</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lenovo-loq-1"
+                                    data-product-name="Lenovo LOQ 1"
+                                    data-product-price="1129.99"
+                                    data-product-image="../images/lenovoLOQ.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -135,6 +169,13 @@ Dolby Audio™ speakers for entertainment & optional high-resolution OLED displa
 
 A flexible selection of ports to expand connectivity & speedy data transfers</p>
                             <p class="card-text"><strong>Price:</strong> $779</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lenovo-ideapad-slim-5i-g10"
+                                    data-product-name="Lenovo IdeaPad slim 5i G10"
+                                    data-product-price="779"
+                                    data-product-image="../images/idepad slim 5i.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -147,6 +188,13 @@ A flexible selection of ports to expand connectivity & speedy data transfers</p>
 16″ dynamic display, rich audio-visual quality
 AI-driven features for all-day productivity</p>
                             <p class="card-text"><strong>Price:</strong> $726</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="lenovo-ideapad-3i-g9"
+                                    data-product-name="Lenovo Slim IdeaPad 3i G9"
+                                    data-product-price="726"
+                                    data-product-image="../images/idepad 3i g9.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -191,6 +239,9 @@ AI-driven features for all-day productivity</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/ThemeSwitcher.js"></script>
+    <script src="../js/ShoppingCart.js"></script>
 </body>
+
+</html>
 
 </html>

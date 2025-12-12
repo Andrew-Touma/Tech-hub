@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechHub - HP Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
@@ -41,6 +41,12 @@
                     <li class="nav-item"><a class="nav-link" href="./Mouse&Keyboards.html">Mouse&Keyboards</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shoppingCart.html">
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span class="badge bg-danger rounded-pill" id="cart-item-count">0</span>
+                        </a>
+                    </li>
                 </ul>
                 <div class="form-check form-switch ms-3">
                     <input class="form-check-input" type="checkbox" id="theme-switch">
@@ -69,6 +75,13 @@
                                 cores, 32 threads + NVIDIA® GeForce RTX™ 5060 Laptop GPU (8 GB)16 GB DDR5-5200 MHz RAM
                                 (2 x 8 GB)512 GB PCIe® NVMe™ M.2 SSD16" diagonal, 2K (1920 x 1200), 60-144 Hz</p>
                             <p class="card-text"><strong>Price:</strong> $1799</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-omen"
+                                    data-product-name="HP Omen"
+                                    data-product-price="1799"
+                                    data-product-image="../images/hpOmen1.jpg">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -85,6 +98,13 @@
                                 15.6" diagonal FHD display
                             </p>
                             <p class="card-text"><strong>Price:</strong> $1200</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-pavilion-gaming-15"
+                                    data-product-name="HP Pavilion Gaming 15"
+                                    data-product-price="1200"
+                                    data-product-image="../images/HP Pavilion Gaming 15.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -96,6 +116,13 @@
                             <p class="card-text">Victus Gaming Laptop 15-fb3025nr 15.6", Windows 11 Home, AMD Ryzen™ 7,
                                 16GB RAM, 1TB SSD, NVIDIA® GeForce RTX™ 4050, FHD, Mica silver</p>
                             <p class="card-text"><strong>Price:</strong> $969.99</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-victus"
+                                    data-product-name="HP Victus"
+                                    data-product-price="969.99"
+                                    data-product-image="../images/hpVictus.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -116,6 +143,13 @@
                                 16 GB memory; 256 GB SSD storage
                                 13.3" diagonal FHD display</p>
                             <p class="card-text"><strong>Price:</strong> $1000</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-envy-13"
+                                    data-product-name="Hp Envy Laptop - Hp Envy 13"
+                                    data-product-price="1000"
+                                    data-product-image="../images/hpenvy13.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -128,6 +162,13 @@
                                 Windows 10, Intel Core,Model / Condition Typical Price (Approx)
                                 New 13.3″ Core i7, 16 GB, 1 TB SSD</p>
                             <p class="card-text"><strong>Price:</strong> $1490</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-spectre-x360"
+                                    data-product-name="HP Spectre x360"
+                                    data-product-price="1490"
+                                    data-product-image="../images/hpSpecter.jpg">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -142,6 +183,13 @@
                                 Intel® Core™ Ultra 5 125U 3 4
                                 16 GB DDR5</p>
                             <p class="card-text"><strong>Price:</strong> $950</p>
+                            <button class="btn btn-primary add-to-cart-btn mt-2"
+                                    data-product-id="hp-probook-440-series"
+                                    data-product-name="HP Probook 440 series"
+                                    data-product-price="950"
+                                    data-product-image="../images/propbook 440.png">
+                                Add to Cart
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -185,6 +233,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/ThemeSwitcher.js"></script>
+    <script src="../js/ShoppingCart.js"></script>
 </body>
+
+</html>
 
 </html>
