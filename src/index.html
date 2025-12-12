@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub - Your Electronics Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand brand-name" href="./index.html">TechHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"id="pcDropdown" role="button" data-bs-toggle="dropdown">PC ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./hp.html">Hp</a></li>
+                            <li><a class="dropdown-item" href="./lenovo.html">Lenovo</a></li>
+                            <li><a class="dropdown-item" href="./dell.html">Dell</a></li>
+                            <li><a class="dropdown-item" href="./acer.html">Acer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  id="phoneDropdown" role="button" data-bs-toggle="dropdown">Phones ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./apple.html">iPhone</a></li>
+                            <li><a class="dropdown-item" href="./samsung.html">Samsung</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./Mouse&Keyboards.html">Mouse&Keyboards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="carousel-section py-4">
+        <div class="container">
+            <h2 class="section-title mb-4">Special Offers • New Additions • Discounts</h2>
+            <div id="promoCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-content">
+                            <p class="carousel-description">Get 30% off on all gaming laptops this week only!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <p class="carousel-description">New iPhone models now available with exclusive deals</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <p class="carousel-description">Premium mechanical keyboards starting at $50</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev custom-control" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next custom-control" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">About Us</h2>
+            <div class="about-content">
+                <p>Welcome to TechHub, your premier destination for cutting-edge technology and electronics. Founded in 2025, we've grown to be a trusted online retailer serving thousands of customers. Our mission is to provide high-quality products at competitive prices, backed by exceptional customer service. Whether you're a professional looking for powerful computing solutions or a tech enthusiast seeking the latest gadgets, we're here to help you find exactly what you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section py-5">
+        <div class="container">
+            <h3 class="section-subtitle mb-4">Top Products by Category</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <img src="../images/gaming_pc.png" class="w-100 object-fit-contain rounded-top bg-light" style="height: 200px;" alt="Filed to load">
+                        <div class="product-info">
+                            <h5>Gaming Laptops</h5>
+                            <button class="btn-view">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <img src="../images/smartphone.png"  class="w-100 object-fit-contain rounded-top bg-light" style="height: 200px;" alt="Filed to load">
+                        <div class="product-info">
+                            <h5>Smartphones</h5>
+                            <button class="btn-view">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                       <img src="../images/keyboard.png"  class="w-100 object-fit-contain rounded-top bg-light" style="height: 200px;" alt="Filed to load">
+                        <div class="product-info">
+                            <h5>Keyboards</h5>
+                            <button class="btn-view">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="footer-box">
+                        <h4>How to Contact Us</h4>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-envelope"></i> <a href="https://outlook.office.com/mail/deeplink/compose?to=support@techhub.com" target="_blank" class="email-link">support@techhub.com</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="https://outlook.office.com/mail/deeplink/compose?to=info@techhub.com" target="_blank" class="email-link">info@techhub.com</a></li>
+                            <li><i class="fas fa-phone"></i> 81 178 254</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-box">
+                        <h4>Social Media</h4>
+                        <ul class="social-list">
+                            <li><a href="https://www.facebook.com/" target="_blank" class="social-link"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <p>&copy; 2025 TechHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+/* Navigation Bar */
+.custom-nav {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: #a8a8a8;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #a8a8a8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 60%;
+    background: #ffffff;
+}
+
+/* Hide Bootstrap default dropdown arrow */
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    background-color: #24243e;
+    border: 1px solid #4a4a4a;
+}
+
+.dropdown-item {
+    color: #a8a8a8;
+}
+
+.dropdown-item:hover {
+    color: #ffffff;
+    background-color: #302b63;
+}
+
+/* Carousel Section */
+.carousel-section {
+    background-color: #1a1a1a;
+    margin: 2rem 0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.custom-carousel {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #4a4a4a;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.carousel-description {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem 3rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #f0f0f0;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #4a4a4a;
+}
+
+.custom-control {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: 1px solid #4a4a4a;
+}
+
+.custom-control:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+/* About Section */
+.about-section {
+    background-color: #1a1a1a;
+}
+
+.about-content {
+    background-color: #24243e;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #f0f0f0;
+    border: 1px solid #4a4a4a;
+}
+
+/* Featured Products Section */
+.featured-section {
+    background-color: #1a1a1a;
+}
+
+.section-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #2c2c2c;
+    border: 1px solid #4CAF50; /* Green outline */
+    color: #f0f0f0;
+}
+
+.card-title {
+     color: #ffffff;
+}
+
+.product-card {
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    border: 1px solid #4CAF50; /* Green outline */
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+    border: 1px solid #4CAF50;
+}
+
+.product-image-placeholder {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #414345 0%, #232526 100%);
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.product-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-info h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.btn-view {
+    padding: 0.6rem 2.5rem;
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-view:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    border-top: 1px solid #4a4a4a;
+}
+
+.footer-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    height: 100%;
+    border-left: 4px solid #4CAF50;
+}
+
+.footer-box h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.contact-list,
+.location-list,
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li,
+.location-list li,
+.social-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+.contact-list li i,
+.social-list li i {
+    margin-right: 10px;
+    color: #4CAF50;
+    width: 20px;
+    text-align: center;
+}
+
+.social-link {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #4CAF50;
+    padding-left: 10px;
+}
+
+.email-link {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.email-link:hover {
+    color: #4CAF50;
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #95a5a6;
+}
